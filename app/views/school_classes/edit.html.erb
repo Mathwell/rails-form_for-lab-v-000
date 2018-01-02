@@ -1,7 +1,8 @@
-<%= form_for(@class) do |f| %>
-  <label>Class title:</label><br>
-  <%=f.title :title %><br>
-  <label>Room number:</label><br>
-  <%= f.room_number :title %><br>
-  <%= f.submit %>
+<%=form_for(@class) do |f|%>
+<%=f.label :title%>
+<%=f.text_field :title%>
+<%=f.label :room_number%>
+<%=f.text_field :room_number%>
+
+<%=f.submit%>
 <% end %>
